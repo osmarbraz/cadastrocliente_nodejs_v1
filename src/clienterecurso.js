@@ -1,5 +1,5 @@
 /**
- * Métodos de acesso aos dados de cliente.
+ * Métodos de acesso aos dados de cliente no banco de dados.
  */
 
 // Import das bibliotecas próprias
