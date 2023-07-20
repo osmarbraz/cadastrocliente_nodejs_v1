@@ -7,8 +7,7 @@
 - Os dados de configuração da integração com o banco de dados estão no arquivo src/dbconfig.js.
 - A tabela cliente possui os campos clienteId, nome e cpf.
 
-- Dependências:
-    - body-parser,
+- Dependências:    
     - express,
     - sqlite3.
 
