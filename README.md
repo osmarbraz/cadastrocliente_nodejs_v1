@@ -9,6 +9,7 @@
 
 - Dependências:    
     - express,
+    - cors,
     - sqlite3.
 
 - Execução:    
