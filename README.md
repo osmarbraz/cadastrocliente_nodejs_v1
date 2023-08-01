@@ -1,6 +1,6 @@
 # Programa servidor API-REST do CRUD de Cliente utilizando Node.js e SQLite.
 
-- O projeto foi desenvolvido no VSCodde deve ser chamado "cadastrocliente_reactjs_v1".
+- O projeto foi desenvolvido no VSCodde deve ser chamado "cadastrocliente_nodejs_v1".
 - Programa cliente está no projeto "cadastrocliente_reactjs_v1".
 - Programa servidor web que cria o webservice na posta 8000.
 - Implementação do serviço utilizando REST e os métodos GET, POST, PUT e DELETE.
