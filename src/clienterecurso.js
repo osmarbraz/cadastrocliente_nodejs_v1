@@ -7,7 +7,7 @@ const db = require("./dbconfig");
 
 // Retorna uma lista com todos os clientes
 const getLista = async (request, response) => {   
-    const sql = 'SELECT * FROM CLIENTE';
+    const sql = 'SELECT * FROM cliente';
     const params = [];
     db.all(sql, params, (error, rows) => {
     if (error) {
@@ -20,7 +20,7 @@ const getLista = async (request, response) => {
 // Procura um cliente pelo id
 const getCliente = async (request, response) => {
     const clienteId = parseInt(request.params.clienteId);
-    const sql = 'SELECT * FROM CLIENTE WHERE ClienteId = ?';
+    const sql = 'SELECT * FROM cliente WHERE clienteId = ?';
     const params = [clienteId];
     db.each(sql, params, (error, rows) => {
     if (error) {
@@ -33,7 +33,7 @@ const getCliente = async (request, response) => {
 // Insere um novo cliente
 const inserir = async (request, response) => {
     const { clienteId, nome, cpf } = request.body ;  
-    const sql = 'INSERT INTO CLIENTE (clienteId, nome, cpf) VALUES (?, ?, ?)';
+    const sql = 'INSERT INTO cliente (clienteId, nome, cpf) VALUES (?, ?, ?)';
     const params =  [clienteId, nome, cpf];
     db.run(sql, params, (error, rows) => {
     if (error) {
@@ -47,7 +47,7 @@ const inserir = async (request, response) => {
 const alterar = async (request, response) => {    
     const clienteId = parseInt(request.params.clienteId);
     const { nome, cpf } = request.body;
-    const sql = 'UPDATE CLIENTE SET nome = ?, cpf = ? WHERE clienteId = ?';
+    const sql = 'UPDATE cliente SET nome = ?, cpf = ? WHERE clienteId = ?';
     const params = [nome, cpf, clienteId];
     db.run(sql, params, (error, rows) => {
     if (error) {
@@ -61,7 +61,7 @@ const alterar = async (request, response) => {
 // Exclui um cliente pelo clienteId
 const excluir = async (request, response) => {
     const clienteId = parseInt(request.params.clienteId);
-    const sql = 'DELETE FROM CLIENTE WHERE clienteId = ?';
+    const sql = 'DELETE FROM cliente WHERE clienteId = ?';
     const params = [clienteId];
     db.run(sql, params, (error, rows) => {
     if (error) {
