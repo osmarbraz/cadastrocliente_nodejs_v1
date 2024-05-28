@@ -7,7 +7,7 @@ const db = require("./dbconfig");
 
 // Retorna uma lista com todos os clientes
 const getLista = async (request, response) => {   
-    const sql = 'SELECT * FROM cliente';
+    const sql = 'SELECT * FROM CLIENTE';
     const params = [];
     db.all(sql, params, (error, rows) => {
     if (error) {
