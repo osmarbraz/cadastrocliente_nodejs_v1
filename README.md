@@ -21,10 +21,10 @@
    <pre><code>npm update</code></pre>  
 
 ## Arquivos fontes do projeto em src
-    - index.js - Programa principal com o servidor Express.
-    - clienterecurso.js - Contêm os métodos de acesso aos recursos do banco de dados.
-    - dbconfig.js - Contêm as configurações e conexão com o banco de dados.
-    - servicos.js - Contêm as rotas aos métodos de acesso ao banco de dados.
+- index.js - Programa principal com o servidor Express.
+- clienterecurso.js - Contêm os métodos de acesso aos recursos do banco de dados.
+- dbconfig.js - Contêm as configurações e conexão com o banco de dados.
+- servicos.js - Contêm as rotas aos métodos de acesso ao banco de dados.
 
 ## Serviços
 - Serviço que retorna via GET a lista de cliente.<br>
